@@ -26,6 +26,11 @@ function validarCorreo(correo) {
     return regexCorreo.test(correo);
 }
 
-function decirhola(){
-    alert("hola");
+function deplegar(id) {
+    const elemento = document.getElementById(id);
+    if (elemento.classList.contains("hide")) {
+        elemento.classList.remove("hide");
+    } else {
+        elemento.classList.add("hide");
+    }
 }

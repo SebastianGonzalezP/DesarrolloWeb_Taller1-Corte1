@@ -1,0 +1,127 @@
+body{
+    background-image:linear-gradient(rgb(32, 48, 58), #fff );
+    min-height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 80vw;
+    text-wrap: wrap;
+
+    margin: auto;
+}
+
+.vertical-center-container{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+
+    width: max-content;
+}
+
+.horizontal-center-container{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+
+    width: 90%;
+}
+
+.framed{
+    padding: 2rem;
+    margin: 1rem auto;
+
+    border: solid 3px black;
+    border-radius: 15px;
+
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.big-button{
+    width: 25%;
+    height: 50px;
+    
+    margin: 4rex auto;
+
+    border: solid 5px rgb(112, 112, 112);
+    border-radius: 25px;
+
+    font-weight: bold;
+    font-size: large;
+}
+
+label{
+    margin-top: 1rem;
+}
+
+form input,
+form select,
+form textarea{
+    min-width: 200px;
+    height: 25px;
+
+    border: solid 2px rgb(112, 112, 112);
+    border-radius: 15px;
+}
+
+form button{
+    min-width: 100px;
+    height: 25px;
+
+    border: solid 2px rgb(112, 112, 112);
+    border-radius: 15px;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: #888; 
+    font-style: italic; 
+    font-size: 14px; 
+    background-color: #f9f9f9; 
+    padding: 5px; 
+}
+
+form textarea{
+    width: 80%;
+    min-width: 200px;
+    height: 250px;
+    resize: none;
+    overflow-y: auto;
+    margin: 1rem 0 3rem;
+}
+
+form label{
+    font-weight: bold;
+    font-size: large;
+}
+
+.hide{
+    display: none;
+}
+
+.formated{
+    white-space: pre;
+    text-align: left;
+}
+
+.interactuable:hover{
+    cursor: pointer;
+    color: #4d4d4d;
+}
+
+.container{
+    max-width: 100%;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.dark-backgroud{
+    background-color: rgb(41, 39, 48);
+    color: rgb(204, 162, 107);
+}

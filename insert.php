@@ -15,7 +15,9 @@ $html = "";
 
 if(mysqli_num_rows($result) > 0){
 
-    $html = "<h1>Lo Siento</h1> <p>hola $nombre usted ya enviado una queja con antelación</p>";
+    $html = "<div class='vertical-center-container framed'>
+    <h1>Lo Siento</h1> <p>hola $nombre usted ya enviado una queja con antelación</p>
+    </div>";
 
 }else{
     
@@ -23,8 +25,10 @@ if(mysqli_num_rows($result) > 0){
     
     $result = mysqli_query($conn,$query);
 
-    $html = "<h1>Perfecto</h1>
-    <p>hola $nombre su solicitud fue guardada con exito</p>";
+    $html = "<div class='vertical-center-container framed'>
+    <h1>Perfecto</h1>
+    <p>hola $nombre su solicitud fue guardada con exito</p>
+    </div>";
     
 }
 
@@ -39,13 +43,16 @@ if(mysqli_num_rows($result) > 0){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global/css/style.css">
     <title>Solicitud guardada</title>
 </head>
 <body>
     
     <?php echo $html ?>
 
-    <button onclick="volver()">Volver</button>
+    <div class="container">
+        <button class="big-button interactuable" onclick="volver()">Volver</button>
+    </div>
 
     <script>
         function volver(){
